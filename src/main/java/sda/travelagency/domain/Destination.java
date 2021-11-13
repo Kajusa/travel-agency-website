@@ -1,4 +1,4 @@
-package sda.travelagency;
+package sda.travelagency.domain;
 
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;

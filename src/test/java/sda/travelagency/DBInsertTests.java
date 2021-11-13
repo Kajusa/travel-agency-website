@@ -1,6 +1,6 @@
-package com.SDA.TravelAgency;
+package sda.travelagency;
 
-import sda.travelagency.Hotel;
+import sda.travelagency.domain.Hotel;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +10,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
-import sda.travelagency.Destination;
-import sda.travelagency.Trip;
+import sda.travelagency.domain.Destination;
+import sda.travelagency.domain.Trip;
 
 import java.sql.Date;
 

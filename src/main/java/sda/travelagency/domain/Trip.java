@@ -1,4 +1,4 @@
-package sda.travelagency;
+package sda.travelagency.domain;
 
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
@@ -33,8 +33,7 @@ public class Trip {
     public Trip() {
     }
 
-    public Trip(@Nullable Integer idTrip, @NonNull Integer idHotel, @Nullable Date departureDate, @Nullable Date arrivalDate, @Nullable Integer numberOfDays, @Nullable String type, double priceAdult, double priceChild, @Nullable Boolean promoted, @Nullable String description, @Nullable Integer freeBeds) {
-        this.idTrip = idTrip;
+    public Trip(@NonNull Integer idHotel, @Nullable Date departureDate, @Nullable Date arrivalDate, @Nullable Integer numberOfDays, @Nullable String type, double priceAdult, double priceChild, @Nullable Boolean promoted, @Nullable String description, @Nullable Integer freeBeds) {
         this.idHotel = idHotel;
         this.departureDate = departureDate;
         this.arrivalDate = arrivalDate;
@@ -46,6 +45,7 @@ public class Trip {
         this.description = description;
         this.freeBeds = freeBeds;
     }
+
 
     @Nullable
     public Integer getIdTrip() {
@@ -159,5 +159,4 @@ public class Trip {
     public int hashCode() {
         return Objects.hash(idTrip, idHotel, departureDate, arrivalDate, numberOfDays, type, priceAdult, priceChild, promoted, description, freeBeds);
     }
-
 }
